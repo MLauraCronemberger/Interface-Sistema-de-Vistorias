@@ -273,6 +273,24 @@
             .header h1 {
                 font-size: 20px;
             }
+
+            /* AQUI É O CSS DO DROPDOWN MENU*/
+
+            .dropdown-select {
+                 width: 100%;
+                 padding: 8px;
+                 margin-top: 10px;
+                 border: 1px solid #ccc;
+                 border-radius: 4px;
+                 background-color: white;
+                 color: #333;
+                 font-size: 16px;
+                 outline: none;
+             }
+
+            .dropdown-select:focus {
+                border-color: #CD853F;
+            }
         }
     </style>
 </head>
@@ -315,6 +333,20 @@
                 <h3>Visão Geral</h3>
                 <br>
                 <input type="text" class="editable-input" placeholder="Descrição Geral">
+                <!-- ADIÇÃO DO DROPDOWN MENU -->
+                <br>
+                <br>
+                <h3>Tipo do imóvel</h3> 
+                <br>
+                <select class="dropdown-select">
+                    <option value="" disabled selected>Selecione o tipo do imóvel</option>
+                    <option value="Casa">Casa</option>
+                    <option value="Apartamento">Apartamento</option>
+                    <option value="Terreno">Terreno</option>
+                    <option value="Comercial">Comercial</option>
+                    <option value="Rural">Rural</option>
+                </select>
+                
             </div>
 
             <div class="location-card">
