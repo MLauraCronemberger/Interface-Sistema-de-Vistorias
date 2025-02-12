@@ -212,6 +212,33 @@
             cursor: pointer;
         }
 
+                 /* AQUI É O CSS DO DROPDOWN MENU E DO BOTÃO DO AMBIENTE*/
+
+                 .dropdown-select {
+                 width: 100%;
+                 padding: 8px;
+                 margin-top: 10px;
+                 border: 1px solid #ccc;
+                 border-radius: 4px;
+                 background-color: white;
+                 color: #333;
+                 font-size: 16px;
+                 outline: none;
+             }
+
+            .dropdown-select:focus {
+                border-color: #CD853F;
+            }
+
+            .botao_add_ambiente {
+            background-color: #d4811c;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
         @media (max-width: 768px) {
             .sidebar {
                 position: relative;
@@ -253,23 +280,7 @@
                 text-align: center;
             }
 
-         /* AQUI É O CSS DO DROPDOWN MENU*/
 
-            .dropdown-select {
-                 width: 100%;
-                 padding: 8px;
-                 margin-top: 10px;
-                 border: 1px solid #ccc;
-                 border-radius: 4px;
-                 background-color: white;
-                 color: #333;
-                 font-size: 16px;
-                 outline: none;
-             }
-
-            .dropdown-select:focus {
-                border-color: #CD853F;
-            }
         }
     </style>
 </head>
@@ -420,30 +431,11 @@
             <input style="size: 10px;" type="file"  placeholder="Fotos Vistoria">       
             
         </div>
+        <br>
+        <br>
+<!--Não conseguimos implementar esse botão-->
+        <button class="botao_add_ambiente">Adicionar Ambiente</button>
 
-        <div class="vistoria">
-            <h3>Ambiente</h3> 
-            <br>
-            <select class="dropdown-select">
-                <option value="" disabled selected>Selecione o ambiente a ser vistoriado:</option>
-                <option value="Garagem">Garagem</option>
-                <option value="Sala de estar">Sala de estar</option>
-                <option value="Sala de jantar">Sala de jantar</option>
-                <option value="Cozinha">Cozinha</option>
-                <option value="Quarto">Quarto</option>
-                <option value="Banheiro">Banheiro</option>
-                <option value="Lavanderia">Lavanderia</option>
-            </select>
-            <br>
-            <br>
-            <h3>Observações Importantes</h3>
-            <br>
-            <textarea class="input-style" placeholder="Observações"></textarea>
-            <h3>Anexar Fotos</h3>
-            <br>
-            <input style="size: 10px;" type="file"  placeholder="Fotos Vistoria">       
-            
-        </div>
 
 
     </main>
